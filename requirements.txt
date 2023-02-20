@@ -1,1 +1,11 @@
-pandas
+pandas 
+numpy
+matplotlib
+rdkit
+deepchem
+seaborn
+sklearn
+datetime
+category_encoders
+imblearn
+# -e .
