@@ -1,0 +1,6 @@
+,Decision Tree
+accuracy_score,0.9628857381150959
+precision_score,0.9677152317880795
+recall_score,0.9589827727645611
+f1_score,0.9633292130201897
+roc_auc_score,0.9629519461787182

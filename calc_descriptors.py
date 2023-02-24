@@ -4,9 +4,9 @@ from data_preprocessing import preprocess_dataframe
 from descriptor_calculation import descriptor_cal
 
 PATH= "All Properties with Finguprints_3.csv"
-descriptor_list= ["Morgan fingerprints","MACCSKeysFingerprint","RDKitDescriptors",'Mordred descriptors','PubChemFingerprint'] 
-# descriptor_list= ["MACCSKeysFingerprint","RDKitDescriptors"] 
-df_size= 10
+descriptor_list= ["Morgan fingerprints","MACCSKeysFingerprint","RDKitDescriptors"] 
+
+df_size= 10000000
 
 # read data
 df = pd.read_csv(PATH)
@@ -29,7 +29,7 @@ for descriptor in descriptor_list:
     X.to_csv(x_file_path, index=False)
     Y.to_csv(y_file_path, index=False)
 
-    print(f"X and y saved for{descriptor}")
+    print(f"X and y saved for {descriptor}")
     print(f"descriptors shape: {X.shape}")
 
 

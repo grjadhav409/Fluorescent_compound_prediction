@@ -8,4 +8,5 @@ sklearn
 datetime
 category_encoders
 imblearn
+PubChemPy
 # -e .

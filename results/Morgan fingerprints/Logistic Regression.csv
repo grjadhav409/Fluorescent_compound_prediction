@@ -1,0 +1,6 @@
+,Logistic Regression
+accuracy_score,0.9849874895746455
+precision_score,0.9820700896495518
+recall_score,0.9885151763740772
+f1_score,0.9852820932134096
+roc_auc_score,0.984927647559388
