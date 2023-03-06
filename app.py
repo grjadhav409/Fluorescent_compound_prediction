@@ -38,7 +38,7 @@ def search_compound():
 
     pass
 
-df = pd.read_csv('data.csv')
+df = pd.read_csv('All Properties with Finguprints_3.csv')
 
 root = Tk()
 root.geometry("800x600")
