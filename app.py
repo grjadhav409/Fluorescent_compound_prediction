@@ -35,3 +35,28 @@ def search_compound():
         lbl_status.configure(text="NOT Fluroscent")
     else:
         lbl_status.configure(text="Fluroscent")
+
+    pass
+
+df = pd.read_csv('data.csv')
+
+root = Tk()
+root.geometry("800x600")
+
+frm = ttk.Frame(root, padding=5)
+frm.master.title("Fluroscence")
+
+txt_compound = ttk.Entry(frm, textvariable=compound_name)
+txt_compound.grid(row=0, column=0, columnspan=6)
+
+btn_search = ttk.Button(frm, text="Search", command=search_compound)
+btn_search.grid(row=0, column=6)
+
+lbl_molecule = ttk.Label(frm, text="...")
+lbl_molecule.grid(row=1, column=0, columnspan=4)
+
+lbl_status = ttk.Label(frm, text="")
+lbl_status.grid(row=2, column=0, columnspan=4)
+
+frm.pack()
+root.mainloop()
