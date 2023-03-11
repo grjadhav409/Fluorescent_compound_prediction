@@ -35,7 +35,6 @@ def search_compound():
         lbl_status.configure(text="NOT Fluroscent")
     else:
         lbl_status.configure(text="Fluroscent")
-
     pass
 
 df = pd.read_csv('All Properties with Finguprints_3.csv')

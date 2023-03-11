@@ -1,0 +1,7 @@
+,Random Forest
+accuracy_score,0.9904086738949124
+precision_score,0.9909688013136289
+recall_score,0.9901558654634947
+f1_score,0.9905621665982765
+roc_auc_score,0.990412962417922
+matthews_corrcoef,0.9808126172217474

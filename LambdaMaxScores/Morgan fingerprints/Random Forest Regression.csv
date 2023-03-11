@@ -1,0 +1,4 @@
+,Random Forest Regression
+mean_absolute_error,11.181356744360116
+mean_squared_error,503.2080800422132
+r2_score,0.9480943845497407

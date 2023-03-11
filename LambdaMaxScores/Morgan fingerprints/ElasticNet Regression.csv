@@ -1,0 +1,4 @@
+,ElasticNet Regression
+mean_absolute_error,53.32371977115648
+mean_squared_error,5217.396947492469
+r2_score,0.46182859467363324

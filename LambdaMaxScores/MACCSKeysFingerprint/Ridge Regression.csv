@@ -1,0 +1,4 @@
+,Ridge Regression
+mean_absolute_error,41.32645236710913
+mean_squared_error,3110.4938589963936
+r2_score,0.6791544005177422

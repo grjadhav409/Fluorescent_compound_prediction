@@ -1,0 +1,7 @@
+,Gaussian Naive Bayes
+accuracy_score,0.951209341117598
+precision_score,0.969335604770017
+recall_score,0.933552091878589
+f1_score,0.9511073965733389
+roc_auc_score,0.9515088703667752
+matthews_corrcoef,0.9030884346904806

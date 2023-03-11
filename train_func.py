@@ -1,4 +1,4 @@
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, matthews_corrcoef
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import make_classification
 from sklearn.linear_model import LogisticRegression
@@ -23,7 +23,6 @@ import pandas as pd
 import os
 
 # Generate some example data
-X, y = make_classification(n_samples=1000, n_features=20, random_state=42)
 PATH= "results"
 
 
@@ -43,7 +42,7 @@ def train_models(X,y,PATH):
     }
 
     # Define a list of metrics to evaluate the models
-    metrics = [accuracy_score, precision_score, recall_score, f1_score, roc_auc_score]
+    metrics = [accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, matthews_corrcoef]
 
     # Create a results folder if it doesn't exist
     if not os.path.exists(PATH):

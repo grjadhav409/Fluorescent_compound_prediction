@@ -9,4 +9,5 @@ datetime
 category_encoders
 imblearn
 PubChemPy
-# -e .
+streamlit
+joblib
