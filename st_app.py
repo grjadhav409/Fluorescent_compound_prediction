@@ -7,30 +7,30 @@ from rdkit import Chem
 from rdkit.Chem.Draw import MolToImage
 import joblib
 
-# Load model file
+# Load model 
 model_path = "best_models/best_classifier.joblib"
 model = joblib.load(model_path)
 
-# Define function to calculate Morgan fingerprints from SMILES string
+#  calculate Morgan fingerprints from SMILES string
 def smiles_to_morgan(smiles):
     mol = Chem.MolFromSmiles(smiles)
     fp  = dc.feat.CircularFingerprint(radius=3, size=1024)
     return fp.featurize([mol])
 
-# Define function to predict fluorescence from Morgan fingerprints
+# predict fluorescence from Morgan fingerprints
 def predict_fluorescence(fp):
     pred = model.predict(fp)
     return pred
 
-# Define function to draw molecule structure from SMILES string
+#  draw structure
 def draw_molecule(smiles):
     mol = Chem.MolFromSmiles(smiles)
     return MolToImage(mol)
 
-# Create a title for the app
+# title
 st.title("Fluorescence Predictor")
 
-# Create a text input for the user to enter a SMILES string
+# input 
 smiles = st.text_input("Enter a SMILES string:")
 
 # Check if the input is valid and not empty
