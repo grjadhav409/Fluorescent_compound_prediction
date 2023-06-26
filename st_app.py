@@ -1,8 +1,8 @@
 # Import libraries
 import streamlit as st
 import deepchem as dc
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 from rdkit import Chem
 from rdkit.Chem.Draw import MolToImage
 import joblib
@@ -46,8 +46,9 @@ if smiles:
         image = draw_molecule(smiles)
 
         # Display the molecule structure and the prediction result on the app
-        st.image(image, caption="Molecule Structure")
-        st.write(f"{'fluorescent' if fluorescence== 1 else 'Non-fluorescence'}")
+        st.image(image, caption="Molecule Structure:") 
+        st.write(f"{'Fluorescent' if fluorescence== 1 else 'Non-fluorescence'}")
+        st.warning("Applicability Domain modele is yet to be added, Predictions are less reliable if input molecule is not simmilar to Model Training molecules")
 
     except:
         # Display an error message if the input is invalid or cannot be processed 
